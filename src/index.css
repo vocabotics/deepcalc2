@@ -55,6 +55,32 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
   }
+  .rainbow {
+    --background: 240 100% 5%;
+    --foreground: 0 0% 98%;
+    --card: 240 100% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 100% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 30 100% 50%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 60 100% 50%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 120 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 100% 20%;
+    --input: 240 100% 20%;
+    --ring: 0 0% 98%;
+    --chart-1: 0 100% 50%;
+    --chart-2: 30 100% 50%;
+    --chart-3: 60 100% 50%;
+    --chart-4: 120 100% 50%;
+    --chart-5: 240 100% 50%;
+  }
 }
 @layer base {
   * {
