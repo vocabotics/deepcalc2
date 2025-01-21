@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
+import { useTheme } from '@/components/theme-provider';
 
 type Operator = '+' | '-' | '×' | '÷';
 
@@ -11,6 +12,7 @@ export function Calculator() {
   const [currentInput, setCurrentInput] = useState('0');
   const [previousInput, setPreviousInput] = useState<string>('');
   const [operation, setOperation] = useState<Operator | null>(null);
+  const { setTheme } = useTheme();
 
   const handleNumber = (num: string) => {
     if (currentInput === '0') {
@@ -81,6 +83,13 @@ export function Calculator() {
           />
         </CardHeader>
         <CardContent className="grid grid-cols-4 gap-2">
+          <Button
+            onClick={() => setTheme('rainbow')}
+            className="col-span-4 h-14 bg-[linear-gradient(to_right,red,orange,yellow,green,blue,indigo,violet)] text-white font-bold hover:opacity-90 transition-opacity"
+            variant="ghost"
+          >
+            Rainbow Theme
+          </Button>
           <Button
             variant="outline"
             className="col-span-2 h-14"
