@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "src/components/calculator.tsx",
+      "components": ["Calculator"],
+      "functions": ["handleNumber", "handleOperator", "handleEqual", "handleClear"],
+      "variables": ["currentInput", "previousInput", "operation"],
+      "types": ["Operator"],
+      "imports": ["react", "@/components/ui/*", "framer-motion", "sonner"]
+    },
+    {
+      "path": "src/App.tsx",
+      "components": ["App"],
+      "imports": ["./components/theme-provider", "@/components/calculator"]
+    }
+  ],
+  "features": [
+    "Theme switching with dark/light/system modes",
+    "Calculator with basic arithmetic operations",
+    "Error handling for division by zero",
+    "Animated transitions with framer-motion",
+    "Toast notifications with sonner",
+    "Responsive grid layout",
+    "Accessible form elements",
+    "Tailwind CSS styling"
+  ]
+}
