@@ -56,7 +56,7 @@ export function PacManGame() {
             y === newPos.y ? row.map((dot, x) => x === newPos.x ? false : dot) : row
           ));
           setScore(s => s + 10);
-          if (score + 10 === 2000) toast.success('You won!');
+          if (score + 10 === 3000) toast.success('You won!');
         }
 
         return newPos;
